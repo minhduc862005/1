@@ -50,3 +50,8 @@ namespace gameponggk
  // di chuyển bóng
  ball.Left += ballXSpeed;
  ball.Top += ballYSpeed;
+ // bóng chạm trần hoặc sàn
+ if (ball.Top < 0 || ball.Top + ball.Height > this.ClientSize.Height)
+ {
+     ballYSpeed = -ballYSpeed;
+ }
