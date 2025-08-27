@@ -25,3 +25,25 @@ namespace gameponggk
             InitializeComponent();
             ResetBall();
         }
+
+        private void GameTimerEvent(object sender, EventArgs e)
+        {
+            // di chuyển Player1
+            if (wDown && player1.Top > 0)
+            {
+                player1.Top -= playerSpeed;
+            }
+            if (sDown && player1.Top + player1.Height < this.ClientSize.Height)
+            {
+                player1.Top += playerSpeed;
+            }
+
+            // di chuyển Player2
+            if (upDown && player2.Top > 0)
+            {
+                player2.Top -= playerSpeed;
+            }
+            if (downDown && player2.Top + player2.Height < this.ClientSize.Height)
+            {
+                player2.Top += playerSpeed;
+            }
