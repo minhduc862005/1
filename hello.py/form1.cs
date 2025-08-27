@@ -77,3 +77,14 @@ if (ball.Left + ball.Width > this.ClientSize.Width)
     player1Score++;
     ResetBall();
 }
+    // cập nhật tiêu đề form
+    this.Text = "Player1: " + player1Score + " -- Player2: " + player2Score;
+    if (player1Score >= 5)
+    {
+        GameOver("🎉 Player 1 thắng!");
+    }
+    else if (player2Score >= 5)
+    {
+        GameOver("🎉 Player 2 thắng!");
+    }
+}
