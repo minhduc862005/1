@@ -60,3 +60,8 @@ namespace gameponggk
  {
      ballYSpeed = -ballYSpeed;
  }
+// bóng chạm thanh player2
+if (ball.Bounds.IntersectsWith(player2.Bounds))
+{
+    ballXSpeed = -Math.Abs(ballXSpeed); // luôn đi sang trái
+}
