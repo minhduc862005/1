@@ -36,3 +36,24 @@ private void InitializeComponent()
     ((System.ComponentModel.ISupportInitialize)player2).BeginInit();
     ((System.ComponentModel.ISupportInitialize)ball).BeginInit();
     SuspendLayout();
+ // 
+ // player1
+ // 
+ player1.Image = Properties.Resources.player;
+ player1.Location = new Point(34, 124);
+ player1.Name = "player1";
+ player1.Size = new Size(30, 120);
+ player1.SizeMode = PictureBoxSizeMode.StretchImage;
+ player1.TabIndex = 0;
+ player1.TabStop = false;
+ // 
+ // player2
+ // 
+ player2.Image = Properties.Resources.computer;
+ player2.Location = new Point(742, 124);
+ player2.Name = "player2";
+ player2.Size = new Size(30, 120);
+ player2.SizeMode = PictureBoxSizeMode.StretchImage;
+ player2.TabIndex = 1;
+ player2.TabStop = false;
+ // 
