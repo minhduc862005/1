@@ -93,3 +93,12 @@ GameTimer.Tick += GameTimerEvent;
     ((System.ComponentModel.ISupportInitialize)ball).EndInit();
     ResumeLayout(false);
 }
+
+        #endregion
+
+        private PictureBox player1;
+        private PictureBox player2;
+        private PictureBox ball;
+        private System.Windows.Forms.Timer GameTimer;
+    }
+}
