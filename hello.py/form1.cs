@@ -47,3 +47,6 @@ namespace gameponggk
             {
                 player2.Top += playerSpeed;
             }
+ // di chuyển bóng
+ ball.Left += ballXSpeed;
+ ball.Top += ballYSpeed;
