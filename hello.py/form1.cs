@@ -65,3 +65,9 @@ if (ball.Bounds.IntersectsWith(player2.Bounds))
 {
     ballXSpeed = -Math.Abs(ballXSpeed); // luôn đi sang trái
 }
+// bóng ra ngoài bên trái → Player2 ghi điểm
+if (ball.Left < 0)
+{
+    player2Score++;
+    ResetBall();
+}
