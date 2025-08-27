@@ -107,3 +107,23 @@ if (ball.Left + ball.Width > this.ClientSize.Width)
          downDown = true;
      }
  }
+
+        private void KeyIsUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.W)
+            {
+                wDown = false;
+            }
+            if (e.KeyCode == Keys.S)
+            {
+                sDown = false;
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                upDown = false;
+            }
+            if (e.KeyCode == Keys.Down)
+            {
+                downDown = false;
+            }
+        }
