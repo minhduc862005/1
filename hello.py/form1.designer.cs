@@ -73,3 +73,23 @@ GameTimer.Enabled = true;
 GameTimer.Interval = 20;
 GameTimer.Tick += GameTimerEvent;
 // 
+    // Form1
+    // 
+    AutoScaleDimensions = new SizeF(8F, 20F);
+    AutoScaleMode = AutoScaleMode.Font;
+    BackColor = Color.Black;
+    ClientSize = new Size(800, 450);
+    Controls.Add(ball);
+    Controls.Add(player2);
+    Controls.Add(player1);
+    DoubleBuffered = true;
+    Name = "Form1";
+    Text = "Player1: 0 -- Player2: 0";
+    Load += Form1_Load;
+    KeyDown += KeyIsDown;
+    KeyUp += KeyIsUp;
+    ((System.ComponentModel.ISupportInitialize)player1).EndInit();
+    ((System.ComponentModel.ISupportInitialize)player2).EndInit();
+    ((System.ComponentModel.ISupportInitialize)ball).EndInit();
+    ResumeLayout(false);
+}
