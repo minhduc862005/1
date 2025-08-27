@@ -55,3 +55,8 @@ namespace gameponggk
  {
      ballYSpeed = -ballYSpeed;
  }
+ // bóng chạm trần hoặc sàn
+ if (ball.Top < 0 || ball.Top + ball.Height > this.ClientSize.Height)
+ {
+     ballYSpeed = -ballYSpeed;
+ }
