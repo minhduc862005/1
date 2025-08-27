@@ -71,3 +71,9 @@ if (ball.Left < 0)
     player2Score++;
     ResetBall();
 }
+// bóng ra ngoài bên phải → Player1 ghi điểm
+if (ball.Left + ball.Width > this.ClientSize.Width)
+{
+    player1Score++;
+    ResetBall();
+}
