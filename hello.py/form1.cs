@@ -138,3 +138,17 @@ if (ball.Left + ball.Width > this.ClientSize.Width)
             ballXSpeed = rand.Next(0, 2) == 0 ? 5 : -5;
             ballYSpeed = rand.Next(0, 2) == 0 ? 5 : -5;
         }
+        private void GameOver(string message)
+        {
+            GameTimer.Stop(); // dừng Timer => game dừng lại
+            MessageBox.Show(message, "Game Over");
+            // Nếu muốn reset thì có thể thêm Application.Restart();
+            // Còn nếu chỉ muốn dừng thì bỏ dòng này
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
