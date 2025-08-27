@@ -19,3 +19,20 @@ namespace gameponggk
             }
             base.Dispose(disposing);
         }
+#region Windows Form Designer generated code
+
+/// <summary>
+///  Required method for Designer support - do not modify
+///  the contents of this method with the code editor.
+/// </summary>
+private void InitializeComponent()
+{
+    components = new System.ComponentModel.Container();
+    player1 = new PictureBox();
+    player2 = new PictureBox();
+    ball = new PictureBox();
+    GameTimer = new System.Windows.Forms.Timer(components);
+    ((System.ComponentModel.ISupportInitialize)player1).BeginInit();
+    ((System.ComponentModel.ISupportInitialize)player2).BeginInit();
+    ((System.ComponentModel.ISupportInitialize)ball).BeginInit();
+    SuspendLayout();
