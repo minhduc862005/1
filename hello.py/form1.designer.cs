@@ -67,3 +67,9 @@ ball.SizeMode = PictureBoxSizeMode.StretchImage;
 ball.TabIndex = 2;
 ball.TabStop = false;
 // 
+// GameTimer
+// 
+GameTimer.Enabled = true;
+GameTimer.Interval = 20;
+GameTimer.Tick += GameTimerEvent;
+// 
