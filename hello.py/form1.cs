@@ -127,3 +127,14 @@ if (ball.Left + ball.Width > this.ClientSize.Width)
                 downDown = false;
             }
         }
+
+        private void ResetBall()
+        {
+            ball.Left = (this.ClientSize.Width / 2) - (ball.Width / 2);
+            ball.Top = (this.ClientSize.Height / 2) - (ball.Height / 2);
+
+            // đổi hướng ngẫu nhiên khi reset
+            Random rand = new Random();
+            ballXSpeed = rand.Next(0, 2) == 0 ? 5 : -5;
+            ballYSpeed = rand.Next(0, 2) == 0 ? 5 : -5;
+        }
