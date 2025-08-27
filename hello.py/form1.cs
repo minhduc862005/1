@@ -88,3 +88,22 @@ if (ball.Left + ball.Width > this.ClientSize.Width)
         GameOver("🎉 Player 2 thắng!");
     }
 }
+ private void KeyIsDown(object sender, KeyEventArgs e)
+ {
+     if (e.KeyCode == Keys.W)
+     {
+         wDown = true;
+     }
+     if (e.KeyCode == Keys.S)
+     {
+         sDown = true;
+     }
+     if (e.KeyCode == Keys.Up)
+     {
+         upDown = true;
+     }
+     if (e.KeyCode == Keys.Down)
+     {
+         downDown = true;
+     }
+ }
