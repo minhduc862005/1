@@ -57,3 +57,13 @@ private void InitializeComponent()
  player2.TabIndex = 1;
  player2.TabStop = false;
  // 
+// ball
+// 
+ball.Image = Properties.Resources.ball;
+ball.Location = new Point(385, 165);
+ball.Name = "ball";
+ball.Size = new Size(30, 30);
+ball.SizeMode = PictureBoxSizeMode.StretchImage;
+ball.TabIndex = 2;
+ball.TabStop = false;
+// 
